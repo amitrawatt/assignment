@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Models</title>
+</head>
+<body onload="colorbluesetValues();cmy();rgb();">
+    <div class="container">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+                <a class ="navbar-brand" href="#">Color Models</a>
+                    <ul class="navbar-nav mr-auto navbar-dark bg-danger">
+                            <li class="nav-item active h3 text-white">
+                                
+                            </li>
+                        </ul>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="rgb.html">RGB</a>
+            </li>
+            <li class="nav-item active">
+                    <a class="nav-link" href="cmy.html">CMY</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="web-safe-colors.html">Web Safe Colors</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+    <br><br>
+        <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+        </div>
+
+        <div class="col-lg-4 col-md-5 col-sm-10 col-xs-10">
+            <div class="card text-lg-left ml-auto">
+                <div class="card-title h2 text-danger "><b><span class='cyan'>Cyan</span> <span class='magenta'>Magenta</span><span class='yellow'> Yellow</span> (<span class='cyan'>C</span><span class='magenta'>M</span><span class='yellow'>Y</span>)</b></div>
+                <div class="card-body col-sm-12 " >
+                        <b><span class='cyan'>C</span><span class='magenta'>M</span><span class='yellow'>Y</span>K</b> is an <i>subtractive reflected light color model </i>where each<br>
+                    color is stored in <i>one byte.</i><br>
+                    All possible combinations of b><span class='cyan'>C</span><span class='magenta'>M</span><span class='yellow'>Y</span>K </b>give 2&#94;32 different colors.<br><br>
+                    Starting with <b>white</b> color, to which different color <b>inks </b> are added<br>
+                    to <b>absrob (subtract)</b> light that is reflected.
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+            </div>
+        <div class="col-lg-5 col-md-5 col-sm-10 col-xs-10">
+        <div class="card text-lg-left ">
+                <div class="card-title h2 text-success "><b><span class='cyan'>Cyan</span> <span class='magenta'>Magenta</span><span class='yellow'> Yellow</span> (<span class='cyan'>C</span><span class='magenta'>M</span><span class='yellow'>Y</span>)</div>
+                    <div class="card-body col-sm-12 " >
+                <h2>
+                        Select <b><span class='cyan'>C</span><span class='magenta'>M</span><span class='yellow'>Y</span> </b> values:
+                </h2>
+                <b><span class='cyan'>Cyan: </span></b>
+                <select id="red"  onchange="displayCMYColor();"></select> 
+                <b><span class='magenta'>Magenta: </span></b>
+                <select id="green" onchange="displayCMYColor();"></select> 
+                <b><span class='cyan'>Yellow: </span></b>
+                <select id="blue" onchange="displayCMYColor();"></select> 
+                <br><br>
+                <table class="table table-stripped text-center" id="output">
+                     <thead class="text-dark text-info">
+                            <tr><th><span class='red'>R</span><span class='green'>G</span><span class='blue'>B</span> Float Values</th><th><span class='red'>R</span><span class='green'>G</span><span class='blue'>B</span> Hexadecimal Values</th><th>Display</th></tr>
+                     </thead>
+                     </table>
+                     <hr>
+            </div>
+        </div>
+
+        </div>
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2"></div>
+        </div>
+    </div>
+    </div>
+    <br><br>
+    <div class="text-center">
+            <kbd>&copy; 2018.&nbsp;&nbsp;A.Rawat. All rights reserved.</kbd></div>
+            </div>    </div>
+            
+            <script src="https://code.jquery.com/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/script.js"></script>
+</body>
+</html>

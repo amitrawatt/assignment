@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Color Models</title>
+</head>
+<body onload="colorbluesetValues();rgb();">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <a class ="navbar-brand" href="#">Color Models</a>
+                <ul class="navbar-nav mr-auto navbar-dark bg-danger">
+                        <li class="nav-item active h3 text-white">
+                            
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="rgb.html">RGB</a>
+            </li>
+            <li class="nav-item active">
+                    <a class="nav-link" href="cmy.html">CMY</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="web-safe-colors.html">Web Safe Colors</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+    <br><br>
+        <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                </div>
+
+        <div class="col-lg-4 col-md-5 col-sm-10 col-xs-10">
+
+            <div class="card text-lg-left ml-auto">
+                <div class="card-title h2 text-danger "><b><span class='red'>Red</span> <span class='green'>Green</span><span class='blue'> Blue</span> (<span class='red'>R</span><span class='green'>G</span><span class='blue'>B</span>)</b></div>
+                <div class="card-body col-sm-12 " >
+                    <b><span class='red'>R</span><span class='green'>G</span><span class='blue'>B</span></b> is an <i>additive color projected light color model </i>where each<br>
+                    color is stored in <i>one byte.</i><br>
+                    All possible combinations of <b><span class='red'>Red</span> <span class='green'>,Green, </b>and <b></span><span class='blue'> Blue</span> </b>give<br>
+                    2&#94;24=16,777,216 different colors.<br><br>
+                    Starting with (<b><span class='red'>Red</span> <span class='green'>Green</span><span class='blue'> ,Blue</span></b>)=(<b><span class='red'>0,</span> <span class='green'>0,</span><span class='blue'>0</span></b>)(black), to which different<br>
+                    color "lights" are added to produce visible colors.
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+            </div>
+        <div class="col-lg-5 col-md-5 col-sm-10 col-xs-10">
+        <div class="card text-lg-left ">
+            <div class="card-title h2 text-success "><b><span class='red'>Red</span> <span class='green'>Green</span><span class='blue'> Blue</span> (<span class='red'>R</span><span class='green'>G</span><span class='blue'>B</span>)</div>
+            <div class="card-body col-sm-12 ">
+                <h2>
+                    Select <b>RGB </b> values:
+                </h2>
+                </h2>
+                <b><span class='red'>Red: </span></b>
+                <select id="red" onchange="displayRGBColor();" ></select>
+                <b><span class='green'>Green: </span></b>
+                <select id="green" onchange="displayRGBColor();"></select>
+                <b><span class='blue'>Blue: </span></b>
+                <select id="blue" onchange="displayRGBColor();"></select>
+                <br><br>
+                <table class="table table-stripped text-center" id="output">
+                     <thead class="text-dark text-info">
+                        <tr><th><span class='red'>R</span><span class='green'>G</span><span class='blue'>B</span> Float Values</th><th><span class='red'>R</span><span class='green'>G</span><span class='blue'>B</span> Hexadecimal Values</th><th>Display</th></tr>
+                     </thead>
+                     </table>
+                     <hr>
+            </div>
+        </div>
+
+        </div>
+    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+        </div>
+    </div>
+    </div>
+    <br>
+    
+    <div class="text-center"> <button type="button" onclick="generateRandomColors();"  id="change" class="btn btn-colour btn-lg"  onclick="changeBackgroundColor();">Generate random colors</button>
+    </div>
+    <br><br>
+    <div class="text-center">
+            <kbd>&copy; 2019.&nbsp;&nbsp;A.Rawat. All rights reserved.</kbd></div>
+            </div>  
+        </div>
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
